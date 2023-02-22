@@ -1,0 +1,109 @@
+.simple {
+  position: relative;
+  &__element {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+    margin-top: 150px;
+  }
+
+  .left__title {
+    font-family: "DMSerifDisplay-Regular";
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536b;
+  }
+  .left__text {
+    width: 445px;
+    font-family: "PublicSans-Regular";
+    font-size: 15px;
+    line-height: 28px;
+    color: #6c8294;
+  }
+  &__right {
+    display: flex;
+    gap: 40px;
+  }
+  &__image {
+    border-radius: 35px;
+    background: #213648;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  }
+}
+.simple::after {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  z-index: -10;
+  content: url(../Images/simple.png);
+}
+@media (max-width: 768px) {
+  .simple {
+    &__element {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+    .left__title {
+      text-align: center;
+    }
+    .left__text {
+      width: 573px;
+      text-align: center;
+    }
+    &__right {
+      gap: 25px;
+      margin-bottom: 48px;
+    }
+  }
+  .simple::after {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .simple {
+    &__element {
+      gap: 48px;
+    }
+    .left__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    .left__text {
+      width: 328px;
+    }
+    &__right {
+      display: flex;
+    }
+    &__image {
+      width: 168px;
+      height: 320px;
+      background: transparent;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .simple {
+    &__element {
+      gap: 48px;
+    }
+    .left__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    .left__text {
+      width: 328px;
+    }
+    &__right {
+      display: flex;
+    }
+    &__image {
+      width: 168px;
+      height: 320px;
+      background: transparent;
+    }
+  }
+}

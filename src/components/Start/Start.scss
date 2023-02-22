@@ -1,0 +1,31 @@
+.start {
+  &__element {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+  }
+  &__title {
+    font-family: "Display-Regular";
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536b;
+  }
+}
+@media (max-width: 768px) {
+  .start {
+    &__element {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .start {
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+}

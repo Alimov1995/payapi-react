@@ -1,0 +1,130 @@
+.who {
+  position: relative;
+  margin-top: 150px;
+  background-color: #1b262f;
+  width: 100%;
+  &__element {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 10;
+  }
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    width: 536px;
+    height: 100px;
+    padding-top: 144px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    column-gap: 62px;
+    margin-top: 46px;
+  }
+
+  &__title {
+    font-family: "Display-Regular";
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #fbfcfe;
+  }
+  &__text {
+    padding-top: 24px;
+    width: 445px;
+    font-family: "PublicSans-Regular";
+    font-size: 15px;
+    line-height: 28px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  &__btn {
+    margin-top: 48px;
+    padding: 16px 25px;
+    background: #ba4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    font-family: "PublicSans-Bold";
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #fbfcfe;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #da6d97;
+    }
+  }
+}
+.who::after {
+  position: absolute;
+  top: 0;
+  content: url(../Images/who-icon.png);
+  width: 780px;
+  height: 780px;
+}
+@media (max-width: 768px) {
+  .who {
+    margin-top: 80px;
+    &__element {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__text {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    &__right {
+      margin-bottom: 56px;
+      padding-top: 88px;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+    }
+    &__btn {
+      margin: 0 auto;
+      width: 135px;
+    }
+  }
+  .who::after {
+    top: 0;
+    content: url(../Images/header-planshet.png);
+    max-width: 780px;
+    height: 780px;
+  }
+}
+@media (max-width: 375px) {
+  .who {
+    margin-top: 80px;
+
+    &__right {
+      padding-top: 80px;
+      margin-bottom: 160px;
+      width: 327px;
+    }
+    &__title {
+      text-align: center;
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__text {
+      margin-bottom: 60px;
+      width: 330px;
+    }
+  }
+  .who::after {
+    top: 0;
+    left: -100px;
+    content: url(../Images/who-mobile.png);
+    max-width: 320px;
+    height: 320px;
+  }
+}

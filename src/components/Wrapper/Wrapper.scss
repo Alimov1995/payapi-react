@@ -1,0 +1,105 @@
+.wrapper {
+  &__element {
+    display: flex;
+    gap: 206px;
+    align-items: center;
+    margin-top: 74px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    width: 546px;
+    font-family: "Display-Regular";
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: #36536b;
+  }
+  &__email {
+    padding: 16px 176px 16px 26px;
+    background: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    font-family: "PublicSans-Bold";
+    font-size: 15px;
+    line-height: 18px;
+    color: #909da9;
+    mix-blend-mode: normal;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__email:hover::placeholder {
+    color: #36536b;
+  }
+  &__btn {
+    margin-left: -160px;
+    padding: 16px 25px;
+    background: #ba4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    font-family: "PublicSans-Bold";
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #fbfcfe;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #da6d97;
+    }
+  }
+  &__text {
+    margin-top: 16px;
+    margin-left: 20px;
+    font-family: "PublicSans-Regular";
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536b;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  &__image {
+    border-radius: 30px;
+    background: #213648;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    &__element {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      width: 570px;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .wrapper {
+    &__title {
+      width: 320px;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+    }
+    &__email {
+      padding: 16px 158px 16px 26px;
+      width: 327px;
+    }
+    &__btn {
+      margin-top: 16px;
+      margin-left: 0;
+      width: 327px;
+    }
+  }
+}

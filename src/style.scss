@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "PublicSans-Regular";
+  src: url(../src/components/font/public-sans/PublicSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PublicSans-Bold";
+  src: url(../src/components/font/public-sans/PublicSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Display-Regular";
+  src: url(../src/components/font/DMSerifDisplay-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoMono-Regular";
+  src: url(../src/components/font/RobotoMono-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+@media (max-width: 1110px) {
+  .container {
+    width: 90%;
+  }
+}
+body {
+  overflow-x: hidden;
+  background: #edf3f8;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+}
+input {
+  border: none;
+}
+
+// $Dark-Pink: #ba4270;
+// $Water-White: #fbfcfe;
+// $San-Juan-Blue: #36536b;
+// $Mirage-Blue: #1b262f;
+// $Charm-Pink: #da6d97;
+// $Light-Blue: #6c8294;
